@@ -1,0 +1,87 @@
+.menu-image {
+    width: 73px;
+    height: 73px;
+    border-radius: 55px;
+}
+
+@media (max-width :768px) {
+    .menu-image {
+        width: 75px;
+        height: 75px;
+        border-radius: 50px;
+    }
+}
+
+.menu {
+    background-color: #364150;
+}
+
+.menu li a {
+    color: white;
+}
+
+.ringme {
+    padding-top: 400px;
+    color: red;
+    height: 100vh;
+    background-image: url(https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg);
+    background-position: center;
+}
+
+.dropdown ul {
+    background-color: #364150;
+}
+
+.click-buttom span {
+    color: white;
+}
+
+.form-creat-left {
+    width: 47%;
+}
+
+.form-creat-right {
+    width: 53%;
+}
+
+.text-video {
+    display: block;
+}
+
+.file-image1 input {
+    height: 165px;
+    background-color: #F1F1F1;
+}
+
+.form-creat-right_content {
+    padding-left: 28%;
+}
+
+.control {
+    border: 1px solid #CED4DA;
+    border-radius: 4px;
+}
+
+.form-input div {
+    padding-bottom: 25px;
+}
+
+.buttom-list button {
+    margin-left: 10%;
+}
+
+.buttom-list {
+    padding-left: 25%;
+}
+
+.form-creat-right_content div {
+    padding-bottom: 17px;
+}
+
+.form-creat {
+    padding-top: 40px;
+}
+
+strong {
+    color: red;
+}

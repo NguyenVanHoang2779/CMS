@@ -1,0 +1,49 @@
+.form-creat-left {
+    width: 47%;
+}
+
+.form-creat-right {
+    width: 53%;
+}
+
+.text-video {
+    display: block;
+}
+
+.file-image1 input {
+    height: 165px;
+    background-color: #F1F1F1;
+}
+
+.form-creat-right_content {
+    padding-left: 28%;
+}
+
+.control {
+    border: 1px solid #CED4DA;
+    border-radius: 4px;
+}
+
+.form-input div {
+    padding-bottom: 25px;
+}
+
+.buttom-list button {
+    margin-left: 10%;
+}
+
+.buttom-list {
+    padding-left: 25%;
+}
+
+.form-creat-right_content div {
+    padding-bottom: 17px;
+}
+
+.form-creat {
+    padding-top: 40px;
+}
+
+strong {
+    color: red;
+}

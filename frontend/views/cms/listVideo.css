@@ -1,0 +1,17 @@
+.input {
+    width: 18%;
+    margin: 2%;
+}
+
+.form-search {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-buttom {
+    padding-left: 2%;
+}
+
+.form-buttom button {
+    margin-right: 2%;
+}

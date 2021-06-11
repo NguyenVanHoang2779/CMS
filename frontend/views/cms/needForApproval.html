@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet" id="font-awesome-5-kit-css">
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet" id="font-awesome-5-kit-css">
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet" id="font-awesome-5-kit-css">
+    <link rel="stylesheet" href="myStyle.css">
+    <link rel="stylesheet" href="listVideo.css">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg menu">
+        <div class="container-fluid">
+            <div class=" ">
+                <img class="menu-image" src="https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2019/07/Man-Silhouette.jpg" alt="">
+            </div>
+            <div>
+                <!-- lỗi không hiển thị bên màn hình app -->
+                <button class="navbar-toggler click-buttom" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span ><i class="fas fa-bars"></i></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
+                        <li class="nav-item dcmcss">
+                            <a class="nav-link dcmcss active" aria-current="page" href="index.html">Homepage</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              System Management
+                            </a>
+                            <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                                <!-- lỗi không hiển thị -->
+                                <li><a class="dropdown-item " href="">1</a></li>
+                                <li><a class="dropdown-item" href="">2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Banner Management
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="creatBanner.html">Creat Banner</a></li>
+                                <li><a class="dropdown-item" href="listBanner.html">List Banner</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Category Management </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Creat Category</a></li>
+                                <li><a class="dropdown-item" href="#">List Category</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Channel Management </a>
+                            <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                                <!-- lỗi không hiển thị -->
+                                <li><a class="dropdown-item " href="creatChannel.html">Creat Channel</a></li>
+                                <li><a class="dropdown-item" href="#">List Channel</a></li>
+                                <li><a class="dropdown-item" href="#">Need For Approval</a></li>
+                                <li><a class="dropdown-item" href="#">Deleted Channel</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Video Management </a>
+                            <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                                <!-- lỗi không hiển thị -->
+                                <li><a class="dropdown-item " href="creatVideo.html">Creat Video</a></li>
+                                <li><a class="dropdown-item" href="listVideo.html">List Video</a></li>
+                                <li><a class="dropdown-item" href="needForApproval.html">Need For Approval</a></li>
+                                <li><a class="dropdown-item" href="deletedVideo.html">Deleted Video</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <div>
+        <div class="video-search">
+            <div class="form-search">
+                <div class="form-group input">
+                    <label for="exampleFormControlInput1">Video Title </label>
+                    <input type="text" class="form-control " id="exampleFormControlInput1" placeholder="">
+                </div>
+                <div class="form-group input">
+                    <label for="exampleFormControlSelect1">Cate </label>
+                    <select class="form-control-plaintext control " id="exampleFormControlSelect1">
+                        <option>Choose Category</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group input">
+                    <label for="exampleFormControlSelect1">Channel </label>
+                    <select class="form-control-plaintext control " id="exampleFormControlSelect1">
+                        <option>Choose Channel</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group input">
+                    <label for="exampleFormControlSelect1">Status </label>
+                    <select class="form-control-plaintext control " id="exampleFormControlSelect1">
+                        <option>All</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group input">
+                    <label for="exampleFormControlSelect1">Is New </label>
+                    <select class="form-control-plaintext control " id="exampleFormControlSelect1">
+                        <option>All</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group input">
+                    <label for="exampleFormControlSelect1">Is Hot </label>
+                    <select class="form-control-plaintext control " id="exampleFormControlSelect1">
+                        <option>All</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-buttom">
+                <button type="button" class="btn btn-primary">SEARCH</button>
+                <button type="button" class="btn btn-light">RESET</button>
+            </div>
+        </div>
+        <div class="result-search"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+
+</html>
