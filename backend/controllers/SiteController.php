@@ -60,7 +60,6 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        Yii::error('vào index --------');
         return $this->render('index');
     }
 
@@ -82,7 +81,7 @@ class SiteController extends Controller
             return $this->goBack();
         } else {
             $model->password = '';
-
+            Yii::error('vao controller login -----------');
             return $this->render('login', [
                 'model' => $model,
             ]);
