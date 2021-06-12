@@ -70,7 +70,9 @@ class SiteController extends Controller
      */
     public function actionLogin()
     {
+       
         if (!Yii::$app->user->isGuest) {
+            Yii::error('lần 1-------');
             return $this->goHome();
         }
 
@@ -78,10 +80,12 @@ class SiteController extends Controller
 
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
+            Yii::error('lần 2-------');
             return $this->goBack();
         } else {
+         
             $model->password = '';
-            Yii::error('vao controller login -----------');
+            
             return $this->render('login', [
                 'model' => $model,
             ]);
@@ -95,8 +99,7 @@ class SiteController extends Controller
      */
     public function actionLogout()
     {
-        Yii::$app->user->logout();
-
+        $test =  Yii::$app->user->logout();
         return $this->goHome();
     }
 }

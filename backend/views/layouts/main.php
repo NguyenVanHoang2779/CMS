@@ -360,7 +360,7 @@ AppAsset::register($this);
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="/site/login">Logout</a>
+                    <a class="btn btn-primary" href="/site/logout">Logout</a>
                 </div>
             </div>
         </div>
