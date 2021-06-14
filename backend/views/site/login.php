@@ -1,6 +1,8 @@
 <?php
+
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
+
 ?>
 
 <div class="container">
@@ -20,37 +22,33 @@ use yii\bootstrap\ActiveForm;
                                 <div class="text-center">
                                     <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                                 </div>
-                                <form class="user"> 
+            
                                 <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
-                                    <div class="form-group">
-                                        <?= $form->field($model, 'username')->textInput(['autofocus' => true]) ?>
-                                    </div>
-                                    <div class="form-group">
-                                        <?= $form->field($model, 'password')->passwordInput() ?>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="custom-control custom-checkbox small">
-                                            <?= $form->field($model, 'rememberMe')->checkbox() ?>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
-                                    </div>
-                                    <hr>
-                                    <a href="index.html" class="btn btn-google btn-user btn-block">
-                                        <i class="fab fa-google fa-fw"></i> Login with Google
-                                    </a>
-                                    <a href="index.html" class="btn btn-facebook btn-user btn-block">
-                                        <i class="fab fa-facebook-f fa-fw"></i> Login with Facebook
-                                    </a>
+
+                                <?= $form->field($model, 'username')->textInput(['autofocus' => true]) ?>
+
+                                <?= $form->field($model, 'password')->passwordInput() ?>
+
+                                <?= $form->field($model, 'rememberMe')->checkbox() ?>
+
+                                <div style="color:#999;margin:1em 0">
+                                    If you forgot your password you can <?= Html::a('reset it', ['site/request-password-reset']) ?>.
+                                    <br>
+                                    Need new verification email? <?= Html::a('Resend', ['site/resend-verification-email']) ?>
+                                </div>
+
+                                <div class="form-group">
+                                    <?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
+                                </div>
+
                                 <?php ActiveForm::end(); ?>
-                                    <hr>
-                                    <div class="text-center">
-                                        <a class="small" href="forgot-password.html">Forgot Password?</a>
-                                    </div>
-                                    <div class="text-center">
-                                        <a class="small" href="register.html">Create an Account!</a>
-                                    </div>
+                                <hr>
+                                <div class="text-center">
+                                    <a class="small" href="forgot-password.html">Forgot Password?</a>
+                                </div>
+                                <div class="text-center">
+                                    <a class="small" href="register.html">Create an Account!</a>
+                                </div>
                             </div>
                         </div>
                     </div>
