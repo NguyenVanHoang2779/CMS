@@ -65,11 +65,10 @@ class VideoController extends Controller
     public function actionCreate()
     {
         $model = new Video();
-
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->render(['view', 'id' => $model->id]);
         }
-        Yii::error("====> PHP");
+        
         return $this->render('create', ['model' => $model]);
     }
 
